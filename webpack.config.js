@@ -9,9 +9,11 @@ module.exports = {
         watchContentBase: true,
         port: 8080,
     },
-    entry: {app: './src/index.js'},
+    // entry: {bundle: './src/index.js'},
+    entry: require('./webpack.entry'),
     output: {
         path: path.join(__dirname, "dist"),
+        // path: path.join(__dirname, "test"),
         publicPath: "/js/",
         filename: '[name].js',
         library: ["com", "example"],
@@ -25,15 +27,7 @@ module.exports = {
                 use: {
                     loader: 'babel-loader',
                     options: {
-                        presets: [
-                            [
-                                "@babel/preset-env",
-                                {
-                                    "useBuiltIns": "usage",
-                                    "targets": "> 0.25%, not dead"
-                                }
-                            ]
-                        ]
+                        presets: ['@babel/preset-env']
                     }
                 }
             }

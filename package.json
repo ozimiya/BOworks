@@ -6,6 +6,7 @@
   "scripts": {
     "start": "webpack-dev-server",
     "build": "webpack --config webpack.config.js",
+    "watch": "watch 'npm run build' ./test/js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "license": "ISC",
@@ -13,8 +14,13 @@
     "@babel/core": "^7.4.4",
     "@babel/preset-env": "^7.4.4",
     "babel-loader": "^8.0.5",
+    "babel-polyfill": "^6.26.0",
+    "watch": "^1.0.2",
     "webpack": "^4.19.1",
     "webpack-cli": "^3.1.0",
     "webpack-dev-server": "^3.1.11"
+  },
+  "dependencies": {
+    "core-js": "^3.0.1"
   }
 }

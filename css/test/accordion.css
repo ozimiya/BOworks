@@ -1,0 +1,47 @@
+.cf:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+.dn {
+    display: none !important;
+}
+p {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.modalWrap > .modal {
+    float: left;
+}
+.modal  + .modal {
+    margin-left: 10px;
+}
+.open-btn {
+    position: relative;
+    text-align: center;
+}
+.open-btn img {
+    position: absolute;
+    top: 7px;
+    right: 11px;
+    width: 30px;
+    height: 30px;
+}
+.open-btn a {
+    display: block;
+    width: 150px;
+    padding: 10px 30px;
+    box-sizing: border-box;
+    background: #9EE5D3;
+}
+.modal-body {
+    display: block;
+    width: 150px;
+    padding: 5px;
+    border:  1px solid #CCC;
+    box-sizing: border-box;
+    text-align: right;
+}
+.modal-body a {
+    font-size: 12px;
+}

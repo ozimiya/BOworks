@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="/css/test/accordion.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="modalWrap cf">
+        <div class="modal">
+            <div class="open-btn jsc-open-btn">
+                <a href="javascript:void(0);" data-accordion="detail" data-text="閉じる">開く</a>
+                <img src="/img/open.png" data-img="/img/close.png">
+            </div>
+            <div class="modal-body jsc-modal-body dn">
+                <div class="close-btn jsc-close-btn">
+                    <a href="javascript:void(0);">閉じる</a>
+                </div>
+                <p>ああああ</p>
+            </div>
+        </div>
+        <div class="modal">
+            <div class="open-btn jsc-open-btn">
+                <a href="javascript:void(0);" data-accordion="detail" data-text="閉じる">開く</a>
+                <img src="/img/open.png" data-img="/img/close.png">
+            </div>
+            <div class="modal-body jsc-modal-body dn">
+                <div class="close-btn jsc-close-btn">
+                    <a href="javascript:void(0);">閉じる</a>
+                </div>
+                <p>ああああ</p>
+            </div>
+        </div>
+        <div class="modal">
+            <div class="open-btn jsc-open-btn">
+                <a href="javascript:void(0);" data-accordion="detail" data-text="閉じる">開く</a>
+                <img src="/img/open.png" data-img="/img/close.png">
+            </div>
+            <div class="modal-body jsc-modal-body dn">
+                <div class="close-btn jsc-close-btn">
+                    <a href="javascript:void(0);">閉じる</a>
+                </div>
+                <p>ああああ</p>
+            </div>
+        </div>
+    </div>
+    <!-- <script src="https://code.jquery.com/jquery-3.1.0.min.js"></script> -->
+    <script src="/dist/js/test.js"></script>
+    <script>
+        // window.addEventListener('DOMcontentLoaded', function(){
+        //    console.log('読み込み');
+        //    global.test({
+        //        test: 'jsc-test',
+        //    }) 
+        // });
+        window.addEventListener("load", function() {
+            global.test({
+                test: 'test'
+            });
+        });
+    </script>
+    </body>
+</html>
