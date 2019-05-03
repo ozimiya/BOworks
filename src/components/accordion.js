@@ -1,6 +1,5 @@
 const DATA_TEXT = 'data-text';
 const DATA_IMG = 'data-img';
-const DATA_ACOORDION = 'data-accordion';
 const CLASS_OPEN = 'dn';
 
 export default (params) => {
@@ -46,7 +45,6 @@ export default (params) => {
 
     const toggleAction = (_trigger, _target, _text, _img, _isMain) => {
         if(state.otherTrigger !== _trigger) closeOtherParts(_trigger, _text, _img);
-    
         
         if(_isMain) _target.classList.toggle(CLASS_OPEN);
         let img = _trigger.querySelector('[' + DATA_IMG + ']');
