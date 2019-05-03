@@ -1,3 +1,8 @@
+// acionFun　→　tggleActionでopen・closeの動きをまとめて行う。（.dnがついているかで閉開の判定）
+//このとき閉じてほしいtriggerが複数あり共用のメソッドを呼び出すので例外処理が必要
+///共用ではなく、open・closeメソッドをそれぞれ呼び出す形 + 閉開状態をstate管理にして同期する形にしたら見通しよくなりそう？
+//→accordion2.js
+
 const DATA_TEXT = 'data-text';
 const DATA_IMG = 'data-img';
 const CLASS_OPEN = 'dn';

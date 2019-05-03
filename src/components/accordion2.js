@@ -60,16 +60,14 @@ export default (params) => {
         let hasImgTrigger = _self.trigger.querySelector('['+ DATA_IMG +']');
 
         if(state.openAction){
-            _self.target.classList.remove(CLASS_OPEN);
             hasTextTrigger.textContent = _text.close;
             hasImgTrigger.setAttribute('src', _img.close);
-            state.openAction = false;
         }else{
-            _self.target.classList.add(CLASS_OPEN);
             hasTextTrigger.textContent = _text.open;
             hasImgTrigger.setAttribute('src', _img.open);
-            state.openAction = true;
         }
+        _self.target.classList.toggle(CLASS_OPEN);
+        state.openAction = !state.openAction;
     };
 
     const closeOtherParts = (_trigger, _text, _img) => {
