@@ -1,13 +1,20 @@
 <template>
   <div id="app">
-    <img src="./assets/logo.png">
-    <router-view/>
+<!--    <img src="../assets/logo.png">-->
+<!--    <router-view/>-->
+    <tabs/>
   </div>
 </template>
 
 <script>
+  console.log('start::app');
+  import tabs from './tabs.vue';
+
 export default {
-  name: 'App'
+  name: 'App',
+  components: {
+    tabs: tabs
+  }
 }
 </script>
 
