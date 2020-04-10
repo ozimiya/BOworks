@@ -2,18 +2,26 @@
 <!--  <p>タブ切り替えをつくる</p>-->
   <div class="tabWrap">
     <ul class="tabList cf">
-      <li>1</li>
-      <li>2</li>
-      <li>3</li>
+      <lists v-for="item in list" v-bind:item="item"/>
     </ul>
   </div>
 </template>
 
 <script>
+import lists from './tab-lists.vue';
+
 export default {
   name: 'tabs',
+  components: {
+    lists: lists
+  },
   data () {
     return {
+      list: [
+        { id: 1, name: 1},
+        { id: 2, name: 2},
+        { id: 3, name: 3}
+      ]
       // msg: 'Welcome to Your Vue.js App'
     }
   }
@@ -46,14 +54,5 @@ a {
   margin: 0 auto;
   letter-spacing: -.4em;
 }
-.tabList > li {
-  float: left;
-  background: #CCC;
-  height: 100px;
-  line-height: 100px;
-  width: 100px;
-}
-.tabList > li + li {
-  margin-left: 10px;
-}
+
 </style>

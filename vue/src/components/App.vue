@@ -8,7 +8,7 @@
 
 <script>
   console.log('start::app');
-  import tabs from './tabs.vue';
+  import tabs from './tab.vue';
 
 export default {
   name: 'App',
