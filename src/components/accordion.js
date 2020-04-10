@@ -15,7 +15,7 @@ export default (params) => {
     let imgObj = {};
     const state = {
         otherTrigger: null,
-    }
+    };
 
     const actionFunc = (e) => {
         const trigger = e.currentTarget;

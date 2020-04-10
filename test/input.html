@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="/css/test/input.css">
+</head>
+<body>
+<ul class="jsc-select-list select-list">
+    <li>
+        <div class="jsc-head head">
+            <span class="input">
+                <input type="radio" id="Y005" name="MA" checked="">
+                <label for="Y005">あ行</label>
+            </span>
+        </div>
+        <div class="body">
+            <ul class="jsc-body">
+                <li>
+                    <input type="checkbox" name="SM" id="Y004">
+                    <label for="Y004">あああ</label>
+                </li>
+                <li>
+                    <input type="checkbox" name="SM" id="Y006">
+                    <label for="Y006">いいい</label>
+                </li>
+                <li>
+                    <input type="checkbox" name="SM" id="Y007">
+                    <label for="Y007">ううう</label>
+                </li>
+                <li>
+                    <input type="checkbox" name="SM" id="Y008">
+                    <label for="Y008">えええ</label>
+                </li>
+                <li>
+                    <input type="checkbox" name="SM" id="Y009">
+                    <label for="Y009">おおお</label>
+                </li>
+            </ul>
+        </div>
+    </li>
+</ul>
+<script src="/dist/js/test.js"></script>
+<script>
+    window.addEventListener('load', function(){
+        global.test({
+            // trigger: 'jsc-select-list'
+        });
+    });
+</script>
+</body>
+</html>

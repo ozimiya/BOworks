@@ -12,7 +12,7 @@ export default (params) => {
     const state = {
         openAction: true,
         otherTrigger: null,
-    }
+    };
 
     const toggleEvent = (e) => {
         state.openAction? openAction(e) : closeAction(e);
@@ -21,7 +21,7 @@ export default (params) => {
     const openAction = (e) => {
         self = getEventTargets(e);
         textObj = getTriggerText(self.trigger);
-        imgObj = getTriggerImg(self.trigger)
+        imgObj = getTriggerImg(self.trigger);
         if(Object.keys(textObj).length) state.otherTrigger = self.trigger;
 
         accordionAction(self, textObj, imgObj);
