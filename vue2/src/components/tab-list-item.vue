@@ -1,30 +1,16 @@
-<template>
-	<li>{{item.name}}</li>
-</template>
 
-<script>
-export default {
-	name: 'tabListItem',
-	props: ['item'],
-}
-</script>
+<!--アイテムをカスタムコンポーネントとして分けた場合の覚書-->
+<!--<template>-->
+<!--	<li @click="changeTab(index)">{{item.name}}</li>-->
+<!--</template>-->
 
-<style scoped>
-	li {
-		list-style: none;
-	}
-	/*.tabList > li {*/
-	/*	display: none;*/
-	/*	float: left;*/
-	/*	background: #CCC;*/
-	/*	height: 100px;*/
-	/*	line-height: 100px;*/
-	/*	width: 100px;*/
-	/*}*/
-	/*.tabList > li.enable {*/
-	/*	display: block;*/
-	/*}*/
-	/*.tabList > li + li {*/
-	/*	margin-left: 10px;*/
-	/*}*/
-</style>
+<!--<script>-->
+<!--	import { mapActions } from 'vuex';-->
+<!--	export default {-->
+<!--		name: 'tabListItem',-->
+<!--		props: ['item', 'index'],-->
+<!--		methods: {-->
+<!--			...mapActions(['changeTab']),-->
+<!--		}-->
+<!--	}-->
+<!--</script>-->
