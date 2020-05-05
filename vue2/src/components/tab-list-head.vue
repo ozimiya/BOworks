@@ -25,9 +25,17 @@
 		computed: {
 			...mapState(['tabList']),
 		},
+		watch: {
+			tabList: {
+				handler(){
+					console.log(this.tabList.displays.activeIndex);
+				},
+				deep: true,
+			}
+		},
 		methods: {
 			...mapActions(['changeTab']),
-		}
+		},
 	};
 </script>
 
