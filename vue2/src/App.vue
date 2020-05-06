@@ -1,16 +1,19 @@
 <template>
 	<div id="app">
 		<TabList/>
+		<Select />
 	</div>
 </template>
 
 <script>
 	import TabList from './components/tab-list.vue';
+	import Select from './components/Select.vue';
 
 	export default {
 		name: 'App',
 		components: {
 			TabList,
+			Select,
 		},
 	}
 </script>
